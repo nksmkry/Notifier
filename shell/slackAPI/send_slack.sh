@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #Incoming WebHooks URL
-WEBHOOKURL="!!!secret"
+WEBHOOKURL=$(cat secret_url.txt)
 
 #temp
 MESSAGEFILE=$(mktemp -t webhooks.XXXX)
